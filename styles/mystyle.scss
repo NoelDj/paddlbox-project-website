@@ -1,0 +1,197 @@
+html,
+body {
+    height: 100%;
+}
+
+h1,h2.h3,h4.h5,h6 {
+    color: #222222;
+}
+
+.img-box {
+    position: relative;
+    height: 350px;
+
+    img {
+        border-radius: 20px;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    h3 {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        z-index: 4;
+    }
+
+    &::after {
+
+        content: "";
+        position: absolute;
+        left: 0;
+        border-radius: 50px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(247, 29, 75, 0.1);
+    }
+}
+
+#video-section {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+#video-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#video-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+#video-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    #video-section {
+        background: url('https://files.guidedanmark.org/files/382/140412_SUPsurf.dk.jpg.jpg') black no-repeat center center scroll;
+    }
+
+    #video-section video {
+        display: none;
+    }
+}
+
+.bg-image {
+    background-image: url('https://source.unsplash.com/kKvQJ6rK6S4/660x1000');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-img-top {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+#hero {
+    box-shadow: rgba(35, 123, 173, 0.6) 0 0 0 1000000px inset;
+}
+
+.btn-primary {
+    background-color: #5d62bb !important;
+    outline: none;
+    border: none;
+}
+
+p,
+li {
+    color: black;
+}
+
+.w {
+    color: white !important;
+}
+
+#cart-page,
+#checkout-page {
+    margin: 100px auto;
+    min-height: 50vh;
+}
+
+.header_area {
+    position: relative;
+}
+
+.footer-area {
+    background: #5d62bb;
+    color: white;
+
+    input {
+        background: white;
+    }
+
+    .border_line {
+        background: white;
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+#table {
+    background: #5d62bb;
+}
+
+#about {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #about {
+        background: rgba($color: white, $alpha: .7) !important;
+        border-radius: 20px;
+    }
+}
+
+.thumb img {
+    height: 250px;
+    width: 100%;
+}
+
+.album img {
+    object-fit: cover;
+}
+
+#watch {
+    background: #5d62bb;
+    color: white;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
