@@ -1,16 +1,14 @@
 import { useState, useEffect } from "react";
 
 const Checkout = () => {
-
-    const initialOrder = { 
+   
+    const [object, setObject] = useState({ 
         amount: 1, 
         price: 50,
         total: 1 * 50,
         start : '12-12-2021 11:00',
         end : '12-12-2021 13:00'
-    }
-    
-    const [object, setObject] = useState(initialOrder)
+    })
 
     useEffect(() => {
         try {
@@ -20,9 +18,9 @@ const Checkout = () => {
             console.log(error);
             return initialOrder;
           }
-    }, ['']);
-
-    const initialValues = {
+    }, []);
+    
+    const [formValues, setFormValues] = useState({
         name: "",
         email: "",
         primary_address: "",
@@ -31,9 +29,7 @@ const Checkout = () => {
         city: "",
         region: "",
         country: "",
-    }
-    
-    const [formValues, setFormValues] = useState(initialValues)
+    })
 
     const handleChange = (e) => {
         const {name, value} = e.target;

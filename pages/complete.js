@@ -8,7 +8,7 @@ const Complete = ({data}) => {
               
           <section className="container rounded my-5">
             <h1>Thanks for ordering</h1>
-            <h2>You Order Id is "2a"</h2>
+            <h2>You Order Id is <strong>2a</strong></h2>
           </section>
         </main>
      );

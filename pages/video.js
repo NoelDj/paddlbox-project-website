@@ -6,7 +6,7 @@ const Video = ({data}) => {
               
           <section className="container rounded my-5">
             <h1>Learn How To Paddle</h1>
-          <div class="video-wrapper">
+          <div className="video-wrapper">
           <iframe width="420" height="315"
             src="https://www.youtube.com/embed/t8H4TDi6XWk">
             </iframe>

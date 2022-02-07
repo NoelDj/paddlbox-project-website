@@ -143,7 +143,7 @@ export default function Home() {
                             <div className="col-md-6 d_flex align-items-center">
                               <div className="about_content">
                                 <h2 className="title title_color">
-                                  It's time to start your adventure
+                                  It is time to start your adventure
                                 </h2>
                                 <p>
                                 Paddlebox is for everyone who wants a fun and different way to move, whether as a shared activity with family and friends, or alone.
@@ -256,7 +256,7 @@ export default function Home() {
                                 </div>
                                 <div className="card-body">
                                   <p className="card-text">
-                                    "I love using paddlboards. It is very easy to rent." - John Doe
+                                  &apos; I love using paddlboards. It is very easy to rent. &apos; - John Doe
                                   </p>
                                 </div>
                               </div>
@@ -268,7 +268,7 @@ export default function Home() {
                                 </div>
                                 <div className="card-body">
                                   <p className="card-text">
-                                    "I like trying Paddlbox. It is something very new for me" - Jane Doe
+                                    &apos;I like trying Paddlbox. It is something very new for me&apos; - Jane Doe
                                   </p>
                                 </div>
                               </div>
@@ -280,7 +280,7 @@ export default function Home() {
                                 </div>
                                 <div className="card-body">
                                   <p className="card-text">
-                                    "I will recommend this to my friends" - Riqui Puig
+                                  &apos;I will recommend this to my friends&apos; - Riqui Puig
                                   </p>
                                 </div>
                               </div>
