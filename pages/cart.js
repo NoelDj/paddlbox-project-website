@@ -24,15 +24,15 @@ const Cart = ({data}) => {
     const stockCount = content.stock_counts.total
     const price = content.base_price
 
-    
-    
-    const [object, setObject] = useState({ 
+    const initialOrder = { 
         amount: 1, 
         price: price,
         total: 1 * price,
         start : '12-12-2021 11:00',
         end : '12-12-2021 13:00'
-    })
+    }
+    
+    const [object, setObject] = useState(initialOrder)
 
     useEffect(() => {
         try {

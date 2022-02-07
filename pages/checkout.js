@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
 
 const Checkout = () => {
-   
-    const [object, setObject] = useState({ 
+
+    const initialOrder = { 
         amount: 1, 
         price: 50,
         total: 1 * 50,
         start : '12-12-2021 11:00',
         end : '12-12-2021 13:00'
-    })
+    }
+    
+    const [object, setObject] = useState(initialOrder)
 
     useEffect(() => {
         try {
