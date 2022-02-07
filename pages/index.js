@@ -64,7 +64,7 @@ export default function Home() {
                                           
                                           <select className="wide">
                                             <option data-display="Amount">
-                                             Choose amount
+                                             Pick
                                             </option>
                                             <option value={1}>1</option>
                                             <option value={2}>2</option>
