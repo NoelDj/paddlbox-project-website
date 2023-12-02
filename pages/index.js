@@ -27,7 +27,7 @@ export default function Home() {
                               <div className="col-md-12">
                                 <div className="boking_table">
                                   <div className="row justify-content-center mb-4">
-                                    <h2>Book Your Room</h2>
+                                    <h2>Book Your Paddleboard</h2>
                                   </div>
                                   <div className="row">
                                     <div className="col-md-2">
